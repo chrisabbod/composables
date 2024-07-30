@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Composables"
 include(":app")
- 
+include(":composable-library")
