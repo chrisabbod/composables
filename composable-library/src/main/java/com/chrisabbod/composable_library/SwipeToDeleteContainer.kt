@@ -76,6 +76,7 @@ fun <T> SwipeToDeleteContainer(
             shrinkTowards = Alignment.Top
         ) + fadeOut()
     ) {
+        // Make sure the content being passed in has a background or backgroundContent will be displayed
         SwipeToDismissBox(
             state = state,
             backgroundContent = {
