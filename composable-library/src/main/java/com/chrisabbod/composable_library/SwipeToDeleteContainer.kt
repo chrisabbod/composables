@@ -28,6 +28,18 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 
+/**
+ * A generic wrapper around the SwipeToDismissBox composable.
+ * This composable handles the swipe-to-delete functionality.
+ *
+ * @param item The item to be displayed and potentially deleted.
+ * @param onDelete A callback function that will be triggered when the item is swiped and confirmed for deletion.
+ * @param animationDuration The duration of the swipe animation, default is 500 milliseconds.
+ * @param content The composable content that represents the item.
+ *
+ * The SwipeToDeleteContainer gathers and manages the state, provides a background for the delete action,
+ * and displays the content within the SwipeToDismissBox.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun <T> SwipeToDeleteContainer(
